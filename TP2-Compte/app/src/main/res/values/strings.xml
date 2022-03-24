@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Compte</string>
+    <string name="nom_d_utilisateur">Nom d\'utilisateur</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="s_identifier">S\'identifier</string>
+    <string name="infosAccount">Les informations sur le compte de l\'utilisateur :</string>
+    <string name="nom">Nom</string>
+    <string name="mot_de_passe_txtv">Mot de passe</string>
+    <string name="NmUs">\"Nom de l\'utilisateur : \"</string>
+    <string name="mdp">\"le mot de passe : \"</string>
+</resources>

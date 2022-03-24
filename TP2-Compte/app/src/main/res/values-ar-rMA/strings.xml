@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الحساب</string>
+    <string name="nom_d_utilisateur">اسم المستخدم</string>
+    <string name="mot_de_passe">القن السري</string>
+    <string name="s_identifier">اثبات الهوية</string>
+    <string name="infosAccount">"معلومات حول حساب المستخدم "</string>
+    <string name="nom">الاسم</string>
+    <string name="mot_de_passe_txtv">القن السري</string>
+    <string name="NmUs">اسم المستخدم</string>
+    <string name="mdp">القن السري</string>
+</resources>
