@@ -49,11 +49,11 @@ public class ModelAdapteur extends ArrayAdapter {
         String imageWeather=weatherClassList.get(position).image;
         if(imageWeather!=null)
             image.setImageResource(images.get(imageWeather));
-            date.setText(weatherClassList.get(position).date);
-            Tmin.setText(weatherClassList.get(position).Tmin);
-            Tmax.setText(weatherClassList.get(position).Tmax);
-            Pression.setText(weatherClassList.get(position).Pression);
-            humidite.setText(weatherClassList.get(position).humidite);
+            date.setText(String.valueOf(weatherClassList.get(position).date));
+            Tmin.setText(String.valueOf(weatherClassList.get(position).Tmin));
+            Tmax.setText(String.valueOf(weatherClassList.get(position).Tmax));
+            Pression.setText(String.valueOf(weatherClassList.get(position).Pression));
+            humidite.setText(String.valueOf(weatherClassList.get(position).humidite));
         return item;
     }
 }
