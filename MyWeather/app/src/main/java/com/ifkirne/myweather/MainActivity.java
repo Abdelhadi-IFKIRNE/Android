@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             data.clear();
             modelAdapteur.notifyDataSetChanged();
             String Ville=cityName.getText().toString();
-            String url="https://samples.openweathermap.org/data/2.5/forecast?q="+Ville+"&appid=51b18750554773f7989f3c293322006b";
+            String url="";
             StringRequest stringRequest=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
