@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/MyContact/app/src/main/res/drawable-anydpi-v24/ic_chercher.xml" value="0.2515" />
+        <entry key="..\:/Android/MyContact/app/src/main/res/layout/activity_form_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/MyContact/app/src/main/res/layout/activity_itemcontact.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/MyContact/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/app/src/main/res/drawable-anydpi-v24/ic_add.xml" value="0.2235" />
         <entry key="..\:/Android/app/src/main/res/drawable-anydpi-v24/ic_back.xml" value="0.2185" />
         <entry key="..\:/Android/app/src/main/res/drawable-anydpi-v24/ic_save.xml" value="0.1775" />

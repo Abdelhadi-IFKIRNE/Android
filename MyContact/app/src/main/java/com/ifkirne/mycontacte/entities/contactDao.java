@@ -15,4 +15,7 @@ public interface contactDao {
     void insert(contact contact);
     @Delete
     void delete(contact contact);
+
+    @Query("SELECT * FROM contact WHERE nom LIKE:name")
+    List<contact> findByNom(String name);
 }

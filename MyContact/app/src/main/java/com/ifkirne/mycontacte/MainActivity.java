@@ -12,6 +12,7 @@ import androidx.room.RoomDatabase;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
      private List<contact> contactList=new ArrayList<>();
      private RecyclerView recyclerView;
      private ImageButton btnAdd;
+     private EditText chercher;
+     private ImageButton btnchercher;
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
        recyclerView=findViewById(R.id.rcContacts);
        btnAdd=findViewById(R.id.add);
-
+       btnchercher=findViewById(R.id.btnchercher);
+       chercher=findViewById(R.id.chercher);
 
        RoomDatabase.Builder<Appdatabase> db= Room.databaseBuilder(getApplicationContext(),Appdatabase.class,"contact").allowMainThreadQueries();
        contactDao contactDao=db.build().contactDao();
@@ -46,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
      btnAdd.setOnClickListener((evt)->{
          Intent  intent=new Intent(getApplicationContext(),formAdd.class);
          startActivity(intent);
+     });
+
+     btnchercher.setOnClickListener((evt)->{
+        List<contact> contactListcher=contactDao.findByNom(chercher.getText().toString());
+        recyclerView.setAdapter(new mainAdapter(contactListcher,getApplicationContext()));
      });
 
     }
